@@ -1,0 +1,23 @@
+#include <stdio.h>
+
+main()
+{
+	int binary2,com[30],i=0,temp,ori;
+	
+	printf("Enter the binary number:");
+	scanf("%d",&binary2);
+	ori=binary2;
+		for(;binary2 > 0;)
+		{
+			temp=binary2%10;
+			if(temp == 1)
+			com[i] = 0;
+			else if(temp == 0)
+			com[i] = 1;				
+			binary2 = binary2/10;
+			i++;
+		}
+		printf("The complement of %d is:",ori);
+		for(i=i-1;i>=0;i--)
+		printf("%d",com[i]);
+}
