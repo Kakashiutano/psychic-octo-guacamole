@@ -7,6 +7,8 @@ main()
 	printf("Enter the binary number:");
 	scanf("%d",&binary2);
 	ori=binary2;
+	if(binary2 = 0 && 1)
+	{
 		for(;binary2 > 0;)
 		{
 			temp=binary2%10;
@@ -20,4 +22,7 @@ main()
 		printf("The complement of %d is:",ori);
 		for(i=i-1;i>=0;i--)
 		printf("%d",com[i]);
+	}
+	else
+	printf("Invalid input! Please try again!");
 }
