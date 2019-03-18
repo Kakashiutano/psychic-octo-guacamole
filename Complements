@@ -24,5 +24,5 @@ main()
 		printf("%d",com[i]);
 	}
 	else
-	printf("Invalid input! Please try again!");
+	printf("Invalid input!Please try again!");
 }
